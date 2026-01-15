@@ -142,6 +142,84 @@
     list-style: none;
 }
 
+/* popular collection style */
+
+.popular-collection {
+    max-width: 1047px;
+    margin: 100px auto 0;
+}
+
+.popular-collection-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.collection-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.collection-card {
+    max-width: 330px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.collection-card-img {
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+.collection-card-name {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.collection-card-amount {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: #5E6366;
+    margin-bottom: 5px;
+}
+
+.collection-card-ratings {
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 22px;
+    color: #5E6366;
+    margin-bottom: 5px;
+}
+
+.collection-card-description {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #787885;
+    max-width: 196px;
+}
+
+.popular-collection-btn-container {
+    text-align: end;
+    margin-top: 50px;
+}
+
+.popular-collection-btn {
+    border: none;
+    background-color: transparent;
+}
+
+.popular-collection-btn-link {
+    text-decoration: none;
+    color: #E02C6D;
+    font-size: 1rem;
+    font-weight: 700;
+}
 
 
 @media screen and (max-width: 576px) {
@@ -196,6 +274,21 @@
     }
     .company-img {
         max-width: 50px;
+    }
+
+    /* popular collection style */
+
+    .popular-collection {
+        margin: 50px auto 0;
+    }
+    .collection-cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .popular-collection-btn-container {
+        margin-top: 30px;
     }
 }
 
