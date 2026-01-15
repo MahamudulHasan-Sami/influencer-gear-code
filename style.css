@@ -12,9 +12,14 @@
   font-style: normal;
 }
 
-.navbar {
+.navbar,
+.hero-section {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.display-flex {
+    display: flex;
 }
 
 .color-darkgray {
@@ -27,8 +32,9 @@
 
 /* main style */
 
+/* navbar style */
+
 .navbar {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 85px;
@@ -40,7 +46,6 @@
 }
 
 .navbar-lists {
-    display: flex;
     gap: 35px;
 }
 
@@ -54,8 +59,95 @@
     font-weight: 600;
 }
 
+/* hero section style */
+
+.hero-section {
+    margin-top: 20px;
+    gap: 133px;
+}
+
+.hero-section-left {
+    margin: auto 0;
+    max-width: 582px;
+}
+
+.hero-left-title {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 16px;
+}
+
+.hero-left-description {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 41px;
+    padding: 10px 20px;
+}
+
+.hero-btn-link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.hero-section-right {
+    max-width: 475px;
+    max-height: 475px;
+}
+.hero-right-img-box {
+    position: relative;
+}
+
+.main-camera {
+    top: -450px;
+    max-width: 440px;
+    max-height: 414px;
+}
+
+.hero-section-right-img1 {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hero-section-right-img2 {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* online companies style */
+
+.online-companies {
+    max-width: 1110px;
+    margin: 70px auto 0px;
+}
+
+.companies-infos {
+    margin: 35px 60px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-list {
+    list-style: none;
+}
+
+
+
 @media screen and (max-width: 576px) {
     
+    /* navbar style */
+
     .navbar {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -69,6 +161,41 @@
     .navbar-lists {
         gap: 15px; 
         justify-content: center;
+    }
+
+    /* hero section style */
+
+    .hero-section {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .hero-section-left {
+        text-align: center;
+        max-width: 404px;
+    }
+    .hero-section-right {
+        max-width: 257px;
+        max-height: 257px;
+        margin: 0 auto;
+    }
+    .main-camera {
+        top: -240px;
+    }
+
+    /* online companies style */
+
+    .online-companies {
+        margin-top: 50px;
+    }
+    .online-companies hr {
+        display: none;
+    }
+    .companies-infos {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+    .company-img {
+        max-width: 50px;
     }
 }
 
