@@ -59,7 +59,7 @@
     .navbar {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 40px;
+        margin-top: 30px;
         gap: 15px;
     }
     .navbar-name {
@@ -67,7 +67,7 @@
         justify-content: center;
     }
     .navbar-lists {
-        gap: 25px; 
+        gap: 15px; 
         justify-content: center;
     }
 }
